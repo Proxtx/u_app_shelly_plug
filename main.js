@@ -9,8 +9,7 @@ export class App {
   }
 
   async turnOn() {
-    if (!this.client) await this.findClient();
-    if (!this.client) return;
+    await this.findClient();
     return JSON.parse(
       (
         await this.client.request("http", "request", [
@@ -24,8 +23,7 @@ export class App {
   }
 
   async turnOff() {
-    if (!this.client) await this.findClient();
-    if (!this.client) return;
+    await this.findClient();
     return JSON.parse(
       (
         await this.client.request("http", "request", [
@@ -39,8 +37,7 @@ export class App {
   }
 
   async isOn() {
-    if (!this.client) await this.findClient();
-    if (!this.client) return;
+    await this.findClient();
     return JSON.parse(
       (
         await this.client.request("http", "request", [
