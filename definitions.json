@@ -1,0 +1,17 @@
+{
+  "methods": {
+    "turnOn": {
+      "name": "Turn On",
+      "arguments": []
+    },
+    "turnOff": {
+      "name": "Turn Off",
+      "arguments": []
+    },
+    "isOn": {
+      "name": "Is On",
+      "arguments": [],
+      "autoRun": true
+    }
+  }
+}
